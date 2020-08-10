@@ -1,0 +1,45 @@
+{
+    "name": "BusinessFunction",
+    "fields": [
+        {
+            "fieldName": "type",
+            "fieldType": "BusinessFunctionType",
+            "fieldValues": "Primary,Support",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "lineOfBusiness",
+            "otherEntityRelationshipName": "businessFunction",
+            "relationshipName": "lineOfBusiness",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "employee",
+            "otherEntityRelationshipName": "businessFunction",
+            "relationshipName": "employee",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20191111101456",
+    "entityTableName": "business_function",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

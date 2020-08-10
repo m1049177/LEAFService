@@ -1,0 +1,164 @@
+entity OraganizationalUnit{
+name String required
+}
+entity LineOfBusiness{
+name String required
+}
+entity Application{
+name String required,
+description String required,
+type ApplicationType required,
+status ApplicationStatus,
+implementationDate LocalDate required
+}
+
+enum ApplicationStatus{
+Running,
+InProgress,
+Halted,
+StartingPhase
+}
+enum ApplicationType{
+WebApplication, 
+WindowsApplication, 
+ReportingApplication, 
+NativeMobileApp,
+ConsoleApplication,
+ERP,
+IntegrationTool
+}
+entity Issue{
+description String required,
+dateOfIssue LocalDate required,
+status IssueStatus required,
+solvedDate LocalDate required,
+solvedBy String,
+numberOfDays Integer,
+typeOfIssue TypeOfIssue required
+}
+enum TypeOfIssue{
+Critical, Normal, Major
+}
+enum IssueStatus{
+Solved, Open, InProgress
+}
+entity Functionality{
+name String required,
+majorModules String required,
+}
+entity Maintenance{
+startDate String required,
+endDate String required
+}
+entity Report{
+name String required,
+type String required,
+reportingTool String required
+}
+entity Integration{
+typeOfDataFlow TypeOfDataFlow required,
+inflowDataSystem String required,
+outFlowDataSystem String required,
+kindOfIntegration String required,
+integratedEntities String required,
+ciCd Boolean
+}
+enum TypeOfDataFlow{
+OneWay, TwoWay
+}
+entity Revenue{
+amount String required,
+date LocalDate required
+}
+entity Spend{
+dateOfUpdate LocalDate required,
+costType SpendType required,
+description String required,
+amount String required,
+spendId String required
+}
+enum SpendType{
+Technology, Issue, Change , Maintanance
+}
+entity Change{
+description String required,
+dateOfChange LocalDate required
+}
+entity Technology{
+name String required,
+type TechnologyType required
+}
+enum TechnologyType{
+Client, Service, Middleware, Cloud, Database, Storage
+}
+entity Brand{
+name String required
+}
+entity BusinessFunction{
+type BusinessFunctionType required,
+name String required
+}
+enum BusinessFunctionType{
+Primary, Support
+}
+entity Capabilities{
+description String required
+}
+entity BusinessProcess{
+name String required,
+startDate LocalDate required,
+expectedEndDate LocalDate,
+endDate LocalDate,
+status ProcessStatus required
+}
+enum ProcessStatus{
+Completed, InProgress, Started
+}
+entity Activity{
+name String required,
+description String required,
+resourcesRequired ResourcesRequired required
+}
+enum ResourcesRequired{
+People, ITSystems, Finance
+}
+entity Task{
+name String required,
+estimatedCost Integer required,
+}
+entity Employee{
+employeeId String required,
+name String required,
+dateOfJoining LocalDate required,
+gender Gender required,
+address String required,
+designation String required
+}
+enum Gender{
+Male, Female
+}
+
+relationship ManyToOne {
+LineOfBusiness{oraganizationalUnit} to OraganizationalUnit,
+Brand{lineOfBusiness} to LineOfBusiness,
+Application{lineOfBusiness} to LineOfBusiness,
+Functionality{application} to Application,
+Report{application} to Application,
+Issue{application} to Application,
+Change{application} to Application,
+Maintenance{application} to Application,
+Technology{application} to Application,
+Integration{application} to Application,
+Revenue{application} to Application,
+Spend{application} to Application,
+BusinessFunction{lineOfBusiness} to LineOfBusiness,
+Capabilities{businessFunction} to BusinessFunction,
+BusinessProcess{capabilities} to Capabilities,
+Activity{businessProcess} to BusinessProcess,
+Task{activity} to Activity,
+OraganizationalUnit{employee} to Employee,
+LineOfBusiness{employee} to Employee,
+BusinessFunction{employee} to Employee,
+Task{employee} to Employee
+}
+service all with serviceImpl 

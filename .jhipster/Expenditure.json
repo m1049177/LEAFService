@@ -1,0 +1,49 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [{
+        "relationshipName": "application",
+        "otherEntityName": "application",
+        "relationshipType": "many-to-one",
+        "relationshipValidateRules": [
+            "required"
+        ],
+        "otherEntityField": "id",
+        "otherEntityRelationshipName": "expenditure"
+    }],
+    "fields": [{
+            "fieldName": "description",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "startDate",
+            "fieldType": "LocalDate",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "endDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "expenditureType",
+            "fieldType": "String",
+            "fieldValues": "INFRA,LICENSE,DEVELOPMENT,ENHANCEMENT,SUPPORTCOST,MISCELLANEOUS",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20191121052230",
+    "dto": "no",
+    "searchEngine": "elasticsearch",
+    "service": "serviceImpl",
+    "entityTableName": "expenditure",
+    "databaseType": "sql",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

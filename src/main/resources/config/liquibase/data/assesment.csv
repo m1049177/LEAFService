@@ -1,0 +1,11 @@
+id;assesment_category;questions
+1;ARCHITECTUREPRINCIPLE;../data/blob/hipster.txt
+2;SECURITY;../data/blob/hipster.txt
+3;SECURITY;../data/blob/hipster.txt
+4;SECURITY;../data/blob/hipster.txt
+5;ARCHITECTUREPRINCIPLE;../data/blob/hipster.txt
+6;AVAILABILITY;../data/blob/hipster.txt
+7;INTERNATIONALIZATION;../data/blob/hipster.txt
+8;INTERNATIONALIZATION;../data/blob/hipster.txt
+9;SECURITY;../data/blob/hipster.txt
+10;SCALABILITY;../data/blob/hipster.txt

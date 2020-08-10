@@ -1,0 +1,11 @@
+id;assessment_category;questions
+1;MAINTAINABILITY;../fake-data/blob/hipster.txt
+2;ARCHITECTUREPRINCIPLE;../fake-data/blob/hipster.txt
+3;SECURITY;../fake-data/blob/hipster.txt
+4;ARCHITECTUREPRINCIPLE;../fake-data/blob/hipster.txt
+5;DATAARCHITECTURE;../fake-data/blob/hipster.txt
+6;SCALABILITY;../fake-data/blob/hipster.txt
+7;AVAILABILITY;../fake-data/blob/hipster.txt
+8;INTERNATIONALIZATION;../fake-data/blob/hipster.txt
+9;SECURITY;../fake-data/blob/hipster.txt
+10;MAINTAINABILITY;../fake-data/blob/hipster.txt

@@ -1,0 +1,57 @@
+{
+    "name": "Application",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "type",
+            "fieldType": "ApplicationType",
+            "fieldValues": "WebApplication,WindowsApplication,ReportingApplication,NativeMobileApp,ConsoleApplication,ERP,IntegrationTool",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "ApplicationStatus",
+            "fieldValues": "Running,InProgress,Halted,StartingPhase"
+        },
+        {
+            "fieldName": "implementationDate",
+            "fieldType": "LocalDate",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "lineOfBusiness",
+            "otherEntityRelationshipName": "application",
+            "relationshipName": "lineOfBusiness",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20191111101445",
+    "entityTableName": "application",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

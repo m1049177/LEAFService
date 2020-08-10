@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity Technology.
+    -->
+    <changeSet id="20191111101454-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="application_id"
+                                 baseTableName="technology"
+                                 constraintName="fk_technology_application_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="application"/>
+
+        <addForeignKeyConstraint baseColumnNames="technology_stack_id"
+                                 baseTableName="technology"
+                                 constraintName="fk_technology_technology_stack_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="technology_stack"/>
+
+    </changeSet>
+</databaseChangeLog>

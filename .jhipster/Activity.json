@@ -1,0 +1,45 @@
+{
+    "name": "Activity",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "resourcesRequired",
+            "fieldType": "ResourcesRequired",
+            "fieldValues": "People,ITSystems,Finance",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "businessProcess",
+            "otherEntityRelationshipName": "activity",
+            "relationshipName": "businessProcess",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20191111101459",
+    "entityTableName": "activity",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

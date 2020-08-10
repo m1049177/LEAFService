@@ -1,0 +1,11 @@
+id;name;name_content_type;type;company_id
+1;../data/blob/hipster.png;image/png;APPPORTFOLIO;8
+2;../data/blob/hipster.png;image/png;APPPORTFOLIO;1
+3;../data/blob/hipster.png;image/png;APPPORTFOLIO;4
+4;../data/blob/hipster.png;image/png;TECHNICALVIEW;1
+5;../data/blob/hipster.png;image/png;BIZVIEW;10
+6;../data/blob/hipster.png;image/png;TECHNICALVIEW;7
+7;../data/blob/hipster.png;image/png;APPPORTFOLIO;6
+8;../data/blob/hipster.png;image/png;TECHNICALVIEW;3
+9;../data/blob/hipster.png;image/png;BIZVIEW;4
+10;../data/blob/hipster.png;image/png;APPPORTFOLIO;9

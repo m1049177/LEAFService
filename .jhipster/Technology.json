@@ -1,0 +1,29 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "application",
+            "otherEntityRelationshipName": "technology",
+            "relationshipName": "application",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipName": "technologyStack",
+            "otherEntityName": "technologyStack",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id",
+            "otherEntityRelationshipName": "technology"
+        }
+    ],
+    "fields": [],
+    "changelogDate": "20191111101454",
+    "dto": "no",
+    "searchEngine": "elasticsearch",
+    "service": "serviceImpl",
+    "entityTableName": "technology",
+    "databaseType": "sql",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

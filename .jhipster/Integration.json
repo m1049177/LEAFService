@@ -1,0 +1,49 @@
+{
+    "name": "Integration",
+    "fields": [{
+            "fieldName": "flowType",
+            "fieldType": "IntegrationFlowType",
+            "fieldValues": "INBOUND,OUTBOUND,BIDIRECTIONAL",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "entity",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [{
+            "relationshipType": "many-to-one",
+            "otherEntityName": "application",
+            "otherEntityRelationshipName": "integration",
+            "relationshipName": "application",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipName": "integrationApp",
+            "otherEntityName": "application",
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": [
+                "required"
+            ],
+            "otherEntityField": "id",
+            "otherEntityRelationshipName": "integration"
+        }
+    ],
+    "changelogDate": "20191111101450",
+    "entityTableName": "integration",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "searchEngine": "elasticsearch",
+    "databaseType": "sql",
+    "readOnly": false
+}

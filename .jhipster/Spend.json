@@ -1,0 +1,57 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [{
+            "fieldName": "dateOfUpdate",
+            "fieldType": "LocalDate",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "amount",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "spendId",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "expenditureType",
+            "fieldType": "String",
+            "fieldValues": "INFRA,LICENSE,DEVELOPMENT,ENHANCEMENT,SUPPORTCOST,MISCELLANEOUS",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "expenditureSubType",
+            "fieldType": "ExpenditureSubType",
+            "fieldValues": "ONCLOUD,ONPREMISSES,ANNUAL,ONETIME"
+        },
+        {
+            "fieldName": "successor",
+            "fieldType": "CurrencySuccessor",
+            "fieldValues": "NOSUCCESSOR,K,M,B,T",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20191111101452",
+    "dto": "no",
+    "searchEngine": "elasticsearch",
+    "service": "serviceImpl",
+    "entityTableName": "spend",
+    "databaseType": "sql",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no",
+    "readOnly": false
+}

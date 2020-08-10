@@ -1,0 +1,34 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.mindtree.leafservice3"
+    },
+    "jhipsterVersion": "6.1.2",
+    "applicationType": "monolith",
+    "baseName": "LeafService3",
+    "packageName": "com.mindtree.leafservice3",
+    "packageFolder": "com/mindtree/leafservice3",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "elasticsearch",
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NWMxYzA4Mjg0ZTcwYzBiZjQ2MTkwY2ZkNThhY2FkODE4MDhmNzdlMTNkNWU2MDU0MjE4N2FlZmMxMjZlYjY5Yjg5YTI0MjZlNzk1NzFlMWZlNWU3OGViMzk5YTEyY2ExZGFhMjc2OWVjMTRlZDhhYjQ0MDlhMDZjMzZiYTk1ODk=",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "skipClient": true
+  }
+}

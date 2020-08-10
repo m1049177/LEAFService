@@ -1,0 +1,27 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "assessmentCategory",
+            "fieldType": "AssessmentCategory",
+            "fieldValues": "ARCHITECTUREPRINCIPLE,DEPLOYMENT,INTERNATIONALIZATION,SECURITY,AVAILABILITY,SCALABILITY,RELIABILITY,MAINTAINABILITY,DATAARCHITECTURE",
+            "fieldValidateRules": []
+        },
+        {
+            "fieldName": "questions",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "text",
+            "fieldValidateRules": []
+        }
+    ],
+    "changelogDate": "20191127115500",
+    "dto": "no",
+    "searchEngine": "elasticsearch",
+    "service": "no",
+    "entityTableName": "assessment",
+    "databaseType": "sql",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

@@ -1,0 +1,30 @@
+{
+    "name": "Brand",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "lineOfBusiness",
+            "otherEntityRelationshipName": "brand",
+            "relationshipName": "lineOfBusiness",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20191111101455",
+    "entityTableName": "brand",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

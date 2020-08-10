@@ -1,0 +1,30 @@
+{
+    "name": "Capabilities",
+    "fields": [
+        {
+            "fieldName": "description",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "businessFunction",
+            "otherEntityRelationshipName": "capabilities",
+            "relationshipName": "businessFunction",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20191111101457",
+    "entityTableName": "capabilities",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

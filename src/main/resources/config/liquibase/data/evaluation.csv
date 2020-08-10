@@ -1,0 +1,11 @@
+id;assesment_category;score;assesment_result;attempt_date;application_id
+1;SECURITY;77969;../data/blob/hipster.txt;2019-11-26;6
+2;RELIABILILITYANDREGULARITY;9997;../data/blob/hipster.txt;2019-11-27;5
+3;DEPLOYEMENT;5641;../data/blob/hipster.txt;2019-11-26;8
+4;ARCHITECTUREPRINCIPLE;61748;../data/blob/hipster.txt;2019-11-27;7
+5;DEPLOYEMENT;52477;../data/blob/hipster.txt;2019-11-26;4
+6;RELIABILILITYANDREGULARITY;23277;../data/blob/hipster.txt;2019-11-26;1
+7;SECURITY;46676;../data/blob/hipster.txt;2019-11-27;9
+8;DEPLOYEMENT;1326;../data/blob/hipster.txt;2019-11-26;10
+9;ARCHITECTUREPRINCIPLE;23089;../data/blob/hipster.txt;2019-11-26;3
+10;SCALABILITY;83319;../data/blob/hipster.txt;2019-11-27;2

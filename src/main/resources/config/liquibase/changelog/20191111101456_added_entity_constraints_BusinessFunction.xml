@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity BusinessFunction.
+    -->
+    <changeSet id="20191111101456-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="line_of_business_id"
+                                 baseTableName="business_function"
+                                 constraintName="fk_business_function_line_of_business_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="line_of_business"/>
+
+        <addForeignKeyConstraint baseColumnNames="employee_id"
+                                 baseTableName="business_function"
+                                 constraintName="fk_business_function_employee_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="employee"/>
+
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,47 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "technologyName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "oudatedVersion",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "stableVersion",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "latestVersion",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "newFeatures",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "technologyType",
+            "fieldType": "TechnologyType",
+            "fieldValues": "CLIENT,SERVER,CLOUD,DATABASE,STORAGE,MIDDLEWARE",
+            "fieldValidateRules": []
+        }
+    ],
+    "changelogDate": "20191120063357",
+    "dto": "no",
+    "searchEngine": "elasticsearch",
+    "service": "no",
+    "entityTableName": "technology_recommendation",
+    "databaseType": "sql",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}
